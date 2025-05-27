@@ -7,7 +7,6 @@ from UIPage import UIPage
 @allure.title("Проверка заголовка на главной странице")
 @pytest.mark.smoke
 @pytest.mark.ui
-@pytest.mark.pos
 def test_home_page_01(browser):
     with allure.step("Открыть окно Кинопоиск"):
         h_page = UIPage(browser)
@@ -22,7 +21,6 @@ def test_home_page_01(browser):
 @allure.epic("UI")
 @allure.title("Быстрый поиск фильма")
 @pytest.mark.ui
-@pytest.mark.pos
 def test_quick_search(browser):
     with allure.step("Открыть окно Кинопоиск"):
         film_page = UIPage(browser)
@@ -40,7 +38,6 @@ def test_quick_search(browser):
 @allure.epic("UI")
 @allure.title("Вход в личный кабинет")
 @pytest.mark.ui
-@pytest.mark.pos
 def test_button_login(browser):
     with allure.step("Открыть окно Кинопоиск"):
         button_login_page = UIPage(browser)
@@ -58,7 +55,6 @@ def test_button_login(browser):
 @allure.epic("UI")
 @allure.title("Смотреть кино бесплатно")
 @pytest.mark.ui
-@pytest.mark.pos
 def test_watch_free_movie(browser):
     with allure.step("Открыть окно Кинопоиск"):
         watch_free_movie = UIPage(browser)
@@ -76,7 +72,6 @@ def test_watch_free_movie(browser):
 @allure.epic("UI")
 @allure.title("Случайный поиск")
 @pytest.mark.ui
-@pytest.mark.pos
 def test_random_search(browser):
     with allure.step("Открыть окно Кинопоиск"):
         button_random_film_page = UIPage(browser)

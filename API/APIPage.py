@@ -1,5 +1,5 @@
 import requests
-from config import API_URL, API_key
+from config_API import API_URL, API_key
 
 
 class APIPage:
