@@ -30,3 +30,5 @@ class APIPage:
         response = requests.get(f"{self.api_url}v1.4/movie", params={"genres.name": wrong_category}, headers=self.my_headers)
         response.raise_for_status()
         return response
+
+

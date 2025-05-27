@@ -10,3 +10,5 @@ def browser():
     yield driver
     with allure.step("Закрыть браузер"):
         driver.quit()
+
+

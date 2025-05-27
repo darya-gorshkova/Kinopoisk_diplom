@@ -76,8 +76,10 @@ def test_random_search(browser):
     with allure.step("Открыть окно Кинопоиск"):
         button_random_film_page = UIPage(browser)
 
-    with allure.step("Нажать кнопку Лупа"):
+    with allure.step("Нажать кнопку Поиск ЛУПА"):
         button_random_film_page.click_random_search()
 
     with allure.step("Нажать кнопку Случайный фильм"):
         button_random_film_page.click_random_film()
+
+

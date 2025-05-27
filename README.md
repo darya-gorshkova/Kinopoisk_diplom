@@ -1,4 +1,4 @@
-# Diplom_Kinopoisk
+# Kinopoisk_diplom
 
 ## Оглавление
 - [Описание](#описание)
@@ -28,7 +28,7 @@ tests - тесты
   
 `pytest.ini` - маркеры для запуска pytest
 
-`README.md` - отчет-инструкция к работе
+`README.md` - описание-инструкция к работе
 
 `config.py` - конфигурации
 

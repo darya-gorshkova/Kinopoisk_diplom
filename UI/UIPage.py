@@ -12,9 +12,9 @@ class UIPage:
         self._driver.get(UI_URL)
         self._driver.maximize_window()
 
-    # Заголовок главной страницы
+    # Заголовок на главной страницы
     def home_page(self):
-        title_hp = WebDriverWait(self._driver, 15).until(
+        title_hp = WebDriverWait(self._driver, 20).until(
             EC.presence_of_element_located((
                 By.CSS_SELECTOR, '.kinopoisk-header-logo__img'))
                 ).get_attribute('alt')
@@ -22,7 +22,7 @@ class UIPage:
 
     # Ввести названия фильма Мастер и Маргарита
     def name_film(self):
-        film = WebDriverWait(self._driver, 15).until(
+        film = WebDriverWait(self._driver, 20).until(
             EC.presence_of_element_located((
                 By.CSS_SELECTOR, '[name="kp_query"]')))
         film.send_keys("Мастер и Маргарита")
@@ -89,3 +89,4 @@ class UIPage:
             name=f"Screenshot: {test_name}",
             attachment_type=allure.attachment_type.PNG
         )
+

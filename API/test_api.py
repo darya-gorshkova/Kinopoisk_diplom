@@ -42,10 +42,10 @@ def test_search_film_person_id():
 
 @allure.epic("API tests")
 @allure.feature("Негативные проверки")
-@allure.title("Поиск по неверному id")
+@allure.title("Поиск по некорректному id")
 @pytest.mark.test_api
 def test_search_wrong_id():
-    wrong_id = "249"
+    wrong_id = "!!!"
     response = api.search_wrong_id(wrong_id)
     assert response.status_code == 400
     assert response.json()["error"] == "Bad Request"
@@ -60,4 +60,6 @@ def test_search_wrong_category():
     response = api.search_wrong_category(wrong_category)
     assert response.status_code == 200
     assert response.json()["total"] == 0
+
+
 

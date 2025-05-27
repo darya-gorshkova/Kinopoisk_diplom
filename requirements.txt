@@ -1,4 +1,4 @@
-# Основные зависимости
+#применяемые в проекте  зависимости
 requests # Библиотека для HTTP-запросов
 SQLAlchemy # ORM для работы с базами данных
 psycopg2-binary # Драйвер PostgreSQL для Python
